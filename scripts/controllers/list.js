@@ -1,8 +1,11 @@
 angular.module('githubView')
 .controller('ListController', function($scope, ReleaseService) {
   $scope.searchValue = "";
-  $scope.items = ReleaseService.query()
+  $scope.items = [];
   $scope.refresh = function() {
-    $scope.items = ReleaseService.query()
+    ReleaseService.query(function(data) {
+      $scope.items = data;
+    })
   }
+  $scope.refresh();
 });
