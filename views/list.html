@@ -16,7 +16,7 @@
     <div class="list-group">
       <div class="list-group-item" ng-repeat="item in items | filter:searchValue">
         <h4 class="list-group-item-heading"><img src="{{item.author.avatar_url}}" class="img-thumbnail" width="32" height="32"></img> {{item.name}}</h4>
-        <p class="list-group-item-text"><span ng-bind-html="item.body"></span></p>
+        <p class="list-group-item-text"><span ng-bind-html="item.desc"></span></p>
         <p class="list-group-item-text">
           <ul class="list-unstyled">
             <li>
