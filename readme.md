@@ -44,7 +44,7 @@ git checkout lab-start
 ### Hints
 1. Angular has some links for this: https://angularjs.org/
 2. Use latest stable and minified version
-4. We need:
+3. We need:
   - angular
   - angular-resource
   - angular-route
@@ -89,6 +89,9 @@ git checkout lab-start
 - Add a panel for the list with title: Instructions
 - Remove the bound file (searchValue)
 
+### Hints
+- TODO
+
 # 4. Create the list
 
 ## 4.1 Create a placeholder for the list
@@ -114,6 +117,9 @@ git checkout lab-start
 - Add a call to fetch the data from the service to the list controller.
 - Add the result to a variable called items
 
+### Hints
+- TODO
+
 ## 4.4 Bind the list to the view
 - Replace the placeholders from 4.1 with real data from the view
 - Add an icon that shows the avatar to the list
@@ -130,19 +136,31 @@ git checkout lab-start
 - Bind this to the _searchValue_
 - Add filtering using this variable to the list
 
+### Hints
+- TODO
+
 ## 5.2 Implement a refresh button
 - Add the button to the top
 - Bind it to a function (resfresh) which refreshes the view
+
+### Hints
+- bootstrap has utility classes for putting on the "right"
+- http://getbootstrap.com/css/#helper-classes-floats
 
 ## 5.3 Improve refresh button
 - Create a call-back function to prevent "flickering" of the list when refreshing
 
 ### Hints
-- TODO
+- the argument in the callback is the data
 
 # 6. Some further tinkering
 
 ## 6.1 Improve the refresh button look and feel
+- Make sure the surrounding div clears
+
+### Hints
+- bootstrap has utility classes for putting on the "right"
+- http://getbootstrap.com/css/#helper-classes-clearfix
 
 ## 6.2 Add new page with controller (restore)
 - Call the view: restore.html
@@ -164,7 +182,17 @@ git checkout lab-start
 - Dont forget to include it
 - Fetch tag metadata and show the hash on the page
 
+ ### Hints
+ - TODO
+
 ## 6.4 Implement logic to fetch/show diff
+- TODO
+
+ ### Hints
+ - TODO
 
 ## 6.5 Add markdown rendering
 - As the data (body) of the release is markdown rendering of markdown
+
+ ### Hints
+ - TODO
