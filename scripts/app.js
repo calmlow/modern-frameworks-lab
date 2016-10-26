@@ -12,6 +12,11 @@ angular.module('githubView',[
 			controller: 'ListController',
 			controllerAs: 'list'
 		})
+		.when('/restore/:id', {
+			templateUrl: 'views/restore.html',
+			controller: 'RestoreController',
+			controllerAs: 'list'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
