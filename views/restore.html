@@ -1,0 +1,28 @@
+<ol class="breadcrumb">
+  <li><a href="#/">Home</a></li>
+  <li class="active">{{tagName}}</a></li>
+</ol>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Restore instructions</h3>
+  </div>
+  <div class="panel-body">
+    To restore the repository to the finished state please run the following command:
+    <pre>
+      cd /my/folder/modern-frameworks-lab
+      # make sure git repository is clean
+      git checkout {{tag.object.sha}}
+      # or
+      git checkout {{tagName}}
+    </pre>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Hints</h3>
+  </div>
+  <div class="panel-body">
+    <pre>{{hint}}</pre>
+  </div>
+</div>

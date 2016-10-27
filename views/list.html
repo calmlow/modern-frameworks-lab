@@ -1,0 +1,33 @@
+<ol class="breadcrumb">
+  <li class="active">Home</li>
+</ol>
+
+<div class="panel panel-primary">
+  <div class="panel-heading clearfix">
+    <button class="btn btn-sm pull-right" ng-click="refresh()"><span class="glyphicon glyphicon-refresh"></span></button>
+    <h3 class="panel-title">Instructions</h3>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <input type="text" ng-model="searchValue" class="form-control input-sm" placeholder="Type to Filter List">
+      </div>
+    </form>
+    <div class="list-group">
+      <div class="list-group-item" ng-repeat="item in items | filter:searchValue">
+        <h4 class="list-group-item-heading"><img src="{{item.author.avatar_url}}" class="img-thumbnail" width="32" height="32"></img> {{item.name}}</h4>
+        <p class="list-group-item-text"><span ng-bind-html="item.desc"></span></p>
+        <p class="list-group-item-text">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#/restore/{{item.tag_name}}"><span class="glyphicon glyphicon-refresh"></span> Show hint/restore to this</a>
+            </li>
+            <li ng-repeat="a in item.assets">
+              <a href="{{a.url}}"><span class="glyphicon glyphicon-download"></span> Download {{a.name}}</a>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
