@@ -64,7 +64,7 @@ class myHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
 
 APIURL = "https://api.github.com"
-PORT = 8002
+PORT = 8003
 handler = SocketServer.TCPServer(("", PORT), myHandler)
 print "serving at port ", PORT
 handler.serve_forever()

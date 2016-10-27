@@ -8,8 +8,9 @@
 ```
 python webserverExtRest.py
 ```
-- Open a browser to: http://localhost:8002
+- Open a browser to: http://localhost:8003
 - Tweak the constants APIURL and PORT to meet your needs.
+- Tip. clone this into a separate folder to be able to have this application running.
 
 ## 0.2 Prepare the git repository
 - Checkout the lab branch
